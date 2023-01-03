@@ -42,3 +42,49 @@ puts "Digite o seu nome: "
 nome = gets
 
 puts "Seu nome é " + nome
+
+###############################
+#Classe
+#Nome de classe sempre se inicia com a letra maiuscula
+class Carro
+ end
+ 
+novo_carro = Carro.new
+puts "Variavel carro: #{novo_carro}"
+
+a = "RUBY PARA INICIANTES"
+b = a
+
+b.downcase!
+puts a 
+
+c = a.clone
+
+c.upcase!
+
+puts c
+
+#################################
+#Variaveis de instancia e metodos
+
+	class Carro
+	
+		def velocidade_maxima
+			250
+		end
+		
+		def adiciona_marca(marca)
+			@marca = marca
+		end
+		
+		def marca
+			@marca
+		end
+	end
+
+    carro = Carro.new
+	puts carro.velocidade_maxima	
+	
+	carro = Carro.new
+	carro.adiciona_marca("Ford")
+	puts carro.marca
